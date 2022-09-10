@@ -1,0 +1,20 @@
+<!-- app.component.html -->
+
+<!-- AppComponent Container -->
+<div class="container content">
+    <div *ngIf="!gameService.getGameEnded(); else gameOver">
+        <!-- Question -->
+        <app-question></app-question>
+        <!-- Notification -->
+        <app-notification></app-notification>
+        <!-- Score -->
+        <app-score></app-score>
+        <!-- CardRow -->
+        <app-cardRow></app-cardRow>
+        <app-timer></app-timer>
+    </div>
+    <ng-template #gameOver>
+        <!-- GameOver -->
+        <app-gameOver></app-gameOver>
+    </ng-template>
+</div>

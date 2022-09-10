@@ -1,0 +1,18 @@
+/* app.component.scss */
+
+/* AppComponent Container */
+.content {
+    text-align: left;
+}
+
+@media (min-width:768px){
+    .content{
+        max-width: 50%;
+    }
+}
+
+@media (min-width:1200px){
+    .content{
+        max-width: 40%;
+    }
+}
